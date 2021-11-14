@@ -4,6 +4,10 @@
 	background: whitesmoke;
 	height: 4rem;
 	padding: 0 1.5rem 0 2rem;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	border-bottom: 1px solid lightgrey;
 }
 header {
 	font-weight: bold;
