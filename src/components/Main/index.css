@@ -2,6 +2,7 @@
 	height: 12rem;
 	object-fit: cover;
 	letter-spacing: 2px;
+	text-shadow: -3px -1px 0px black;
 	color: white;
 	display: flex;
 	justify-content: center;
