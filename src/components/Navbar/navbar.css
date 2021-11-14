@@ -39,12 +39,11 @@ header {
 	flex-direction: column;
 	gap: 0.5rem;
 }
-.dropdown p:nth-child(2),
-.dropdown p:nth-child(3) {
+.dropdown p:nth-child(2) {
 	color: darkgrey;
 }
-.dropdown p:nth-child(2):hover,
-.dropdown p:nth-child(3):hover {
+
+.dropdown p:nth-child(2):hover {
 	color: black;
 }
 .dropdown button {
@@ -78,6 +77,10 @@ header {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	color: darkgrey;
+}
+.shop:hover {
+	color: black;
 }
 .categories {
 	background: white;
@@ -86,6 +89,7 @@ header {
 .categories p {
 	padding: 0.25rem 1rem;
 	width: 100%;
+	color: darkgray;
 }
 .categories p:nth-child(1) {
 	width: 100%;
