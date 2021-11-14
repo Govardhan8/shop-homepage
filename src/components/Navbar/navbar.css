@@ -1,22 +1,29 @@
+/*Navigation bar styling*/
 .navbar {
 	display: flex;
+	/*To keep them aligned in a same x-axis*/
 	align-items: center;
 	background: whitesmoke;
 	height: 4rem;
 	padding: 0 1.5rem 0 2rem;
+	/* Making it stick to top of the screen when scroliing */
 	position: sticky;
 	top: 0;
+	/*To make sure its on top of everything*/
 	z-index: 10;
 	border-bottom: 1px solid lightgrey;
 }
+/*Let's Shop - heading styles*/
 header {
 	font-weight: bold;
 	font-size: 1.25rem;
 	letter-spacing: 1.5px;
 }
+
 .menuList {
 	display: none;
 }
+/*Hamburger icon*/
 .menuIcon {
 	display: flex;
 	justify-content: center;
@@ -26,16 +33,20 @@ header {
 	cursor: pointer;
 	margin: 0 0 0 auto;
 }
+
+/*Border for the menuicon when clicked or hovered*/
 .menuIcon:hover,
 .menuIcon:focus,
 .menuIcon:active {
 	border: 5px solid darkgray;
 }
+/*Elements of the menu*/
 .dropdown {
 	cursor: pointer;
 	padding: 0.5rem 2rem;
 	background: whitesmoke;
 	display: flex;
+	/*Keeping them in a column*/
 	flex-direction: column;
 	gap: 0.5rem;
 }
@@ -55,11 +66,7 @@ header {
 	font-size: 1.15rem;
 	border-radius: 0.5rem;
 }
-.dropdown button:hover {
-	background: black;
-	color: whitesmoke;
-}
-
+/*Items count*/
 .dropdown span {
 	width: 1.65rem;
 	height: 1.65rem;
@@ -73,6 +80,8 @@ header {
 	display: flex;
 	align-items: center;
 }
+
+/*Shop link in dropdowns*/
 .shop {
 	position: relative;
 	display: flex;
@@ -82,6 +91,7 @@ header {
 .shop:hover {
 	color: black;
 }
+/*Categories under shop*/
 .categories {
 	background: white;
 	border: 1px solid lightgrey;
@@ -92,9 +102,15 @@ header {
 	color: darkgray;
 }
 .categories p:nth-child(1) {
-	width: 100%;
 	border-bottom: 1px solid lightgrey;
 }
+/*Cart button*/
+.dropdown button:hover {
+	background: black;
+	color: whitesmoke;
+}
+
+/*When screen size is more than 996px*/
 @media (min-width: 996px) {
 	.navbar {
 		height: 5rem;

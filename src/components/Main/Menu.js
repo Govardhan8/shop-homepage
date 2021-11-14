@@ -2,8 +2,11 @@ import { MenuItem } from './MenuItem'
 
 const Menu = () => {
 	return (
+		// For the main content of the page
 		<section className='pageContainer'>
+			{/* To hold the items */}
 			<div className='container'>
+				{/* Mapping through items data */}
 				{MenuItem.map((item, index) => (
 					<article className='item' key={index}>
 						<img className='itemImage' src={item.image} alt={item.title} />

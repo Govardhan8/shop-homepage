@@ -1,34 +1,41 @@
 .image {
+	/* Main image of the page */
 	height: 12rem;
-	object-fit: cover;
-	letter-spacing: 2px;
-	text-shadow: -3px -1px 0px black;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5rem;
-	font-weight: bold;
 	background: url('https://wallpaperaccess.com/full/1496231.jpg') #4e342e
 		no-repeat;
 	background-size: cover;
 	background-blend-mode: soft-light;
+
+	/* For the text in the image	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-shadow: -3px -1px 0px black;
+	color: white;
+	font-weight: bold;
 }
+/* To display the items container in the middle */
 .pageContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: whitesmoke;
 }
+/* To hold the items */
 .container {
 	max-width: 90rem;
 	padding: 3rem 1rem;
+	/* Making the items dynamically layed out */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	/*Vertical and horizontal gaps*/
+	gap: 3rem 2rem;
 }
+/*Every individual item*/
 .item {
 	display: flex;
 	flex-direction: column;
@@ -54,9 +61,7 @@ h4 {
 	width: 100%;
 	object-fit: cover;
 }
-.content {
-	display: grid;
-}
+
 .btn {
 	margin: auto 1rem 0.5rem 1rem;
 	padding: 0.3rem;
@@ -69,6 +74,7 @@ h4 {
 	background-color: black;
 	color: white;
 }
+/* Sale tag */
 .sale {
 	background: black;
 	color: white;
@@ -78,6 +84,7 @@ h4 {
 	right: 0.5rem;
 	padding: 0 0.25rem !important;
 }
+/*Changing image size for different screen sizes*/
 @media (min-width: 450px) {
 	.image {
 		height: 16rem;

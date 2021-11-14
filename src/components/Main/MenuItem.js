@@ -1,3 +1,4 @@
+// Data of items being displayed
 export const MenuItem = [
 	{
 		image:

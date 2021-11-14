@@ -5,6 +5,7 @@ import Menu from './Menu'
 const index = () => {
 	return (
 		<div>
+			{/* Main Image + items */}
 			<Main />
 			<Menu />
 		</div>

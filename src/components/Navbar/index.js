@@ -7,11 +7,14 @@ const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false)
 	return (
 		<>
+			{/* Navigation bar layout */}
 			<nav className='navbar'>
 				<header>Let's Shop</header>
+				{/* Displayed when screen size is over 996px */}
 				<div className='menuList'>
 					<Dropdown />
 				</div>
+				{/* Displayed when screen size is under 996px */}
 				<button
 					className='menuIcon'
 					onClick={() => {
@@ -22,6 +25,7 @@ const Navbar = () => {
 					<MenuIcon sx={{ color: 'slategray', fontSize: 40 }} />
 				</button>
 			</nav>
+			{/* Displayed when screen size is under 996px */}
 			{showMenu && <Dropdown />}
 		</>
 	)
